@@ -11,14 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-var count = 0;
 const box = document.getElementById('box');
 box.addEventListener('click', () => {
-  count++;
-  if (count < 3) {
-    box.classList.add('shake-animation');
-    setTimeout(() => {
-      box.classList.remove('shake-animation');
-    }, 500);
-  }
+  var text = document.querySelector('h1');
+  text.textContent = "Merry Christmas"
+  box.classList.add('open-animation');
 });
